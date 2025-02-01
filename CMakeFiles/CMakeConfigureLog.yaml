@@ -1,0 +1,825 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      The system is: Linux - 5.14.0-427.37.1.el9_4.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/3.26.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1102 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCUDACompiler.cmake:75 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Checking whether the CUDA compiler is NVIDIA using "" matched "nvcc: NVIDIA \\(R\\) Cuda compiler driver":
+      nvcc: NVIDIA (R) Cuda compiler driver
+      Copyright (c) 2005-2024 NVIDIA Corporation
+      Built on Fri_Jun_14_16:34:21_PDT_2024
+      Cuda compilation tools, release 12.6, V12.6.20
+      Build cuda_12.6.r12.6/compiler.34431801_0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:53 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCUDACompiler.cmake:307 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+      Compiler: /apps/rocky9/cuda/12.6/bin/nvcc 
+      Build flags: 
+      Id flags: --keep;--keep-dir;tmp -v
+      
+      The output was:
+      0
+      #$ _NVVM_BRANCH_=nvvm
+      #$ _SPACE_= 
+      #$ _CUDART_=cudart
+      #$ _HERE_=/apps/rocky9/cuda/12.6/bin
+      #$ _THERE_=/apps/rocky9/cuda/12.6/bin
+      #$ _TARGET_SIZE_=
+      #$ _TARGET_DIR_=
+      #$ _TARGET_DIR_=targets/x86_64-linux
+      #$ TOP=/apps/rocky9/cuda/12.6/bin/..
+      #$ CICC_PATH=/apps/rocky9/cuda/12.6/bin/../nvvm/bin
+      #$ NVVMIR_LIBRARY_DIR=/apps/rocky9/cuda/12.6/bin/../nvvm/libdevice
+      #$ LD_LIBRARY_PATH=/apps/rocky9/cuda/12.6/bin/../lib:/apps/rocky9/cuda/12.6/extras/CUPTI/lib64:/apps/rocky9/cuda/12.6/lib64:/apps/rocky9/cuda/12.6/lib:/usr/lib64/nvidia:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib
+      #$ PATH=/apps/rocky9/cuda/12.6/bin/../nvvm/bin:/apps/rocky9/cuda/12.6/bin:/apps/rocky9/cuda/12.6/bin:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/hpss/bin:/opt/hsi/bin:/opt/puppetlabs/bin:/usr/site/rcac/sbin:/usr/site/rcac/bin:/usr/site/rcac/scripts:/opt/thinlinc/bin:/opt/thinlinc/sbin
+      #$ INCLUDES="-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"  
+      #$ LIBRARIES=  "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib"
+      #$ CUDAFE_FLAGS=
+      #$ PTXAS_FLAGS=
+      #$ rm tmp/a_dlink.reg.c
+      #$ gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=6 -D__CUDACC_VER_BUILD__=20 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=6 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" 
+      #$ cudafe++ --c++17 --gnu_version=110401 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/3.26.5/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" 
+      #$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=6 -D__CUDACC_VER_BUILD__=20 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=6 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" 
+      #$ "$CICC_PATH/cicc" --c++17 --gnu_version=110401 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/3.26.5/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"
+      #$ ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" 
+      #$ fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" 
+      #$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -Wno-psabi "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" 
+      #$ nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"
+      #$ fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" 
+      #$ gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  -Wno-psabi "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=6 -D__CUDACC_VER_BUILD__=20 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=6 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/apps/rocky9/cuda/12.6/bin/crt/link.stub" -o "tmp/a_dlink.o" 
+      #$ g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" 
+      
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "a.out"
+      
+      The CUDA compiler identification is NVIDIA, found in:
+        /home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/3.26.5/CompilerIdCUDA/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCUDACompiler.cmake:523 (message)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Parsed CUDA nvcc implicit link information:
+        found 'PATH=' string: [/apps/rocky9/cuda/12.6/bin/../nvvm/bin:/apps/rocky9/cuda/12.6/bin:/apps/rocky9/cuda/12.6/bin:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/hpss/bin:/opt/hsi/bin:/opt/puppetlabs/bin:/usr/site/rcac/sbin:/usr/site/rcac/bin:/usr/site/rcac/scripts:/opt/thinlinc/bin:/opt/thinlinc/sbin]
+        found 'LIBRARIES=' string: ["-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib"]
+        considering line: [#$ rm tmp/a_dlink.reg.c]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=6 -D__CUDACC_VER_BUILD__=20 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=6 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [cudafe++ --c++17 --gnu_version=110401 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/3.26.5/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=6 -D__CUDACC_VER_BUILD__=20 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=6 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: ["$CICC_PATH/cicc" --c++17 --gnu_version=110401 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/3.26.5/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+        considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+        considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -Wno-psabi "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+        considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"]
+          ignoring nvlink line
+        considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  -Wno-psabi "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=6 -D__CUDACC_VER_BUILD__=20 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=6 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/apps/rocky9/cuda/12.6/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+        considering line: [g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          extracted link line: [g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+        considering line: []
+        extracted link launcher name: [g++]
+        found link launcher absolute path: [/usr/bin/g++]
+      
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        link line: [cuda-fake-ld g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          arg [cuda-fake-ld] ==> ignore
+          arg [g++] ==> ignore
+          arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+          arg [-D__NV_LEGACY_LAUNCH] ==> ignore
+          arg [-m64] ==> ignore
+          arg [-Wl,--start-group] ==> ignore
+          arg [tmp/a_dlink.o] ==> ignore
+          arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+          arg [-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs]
+          arg [-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib] ==> dir [/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib]
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [-Wl,--end-group] ==> ignore
+          arg [-o] ==> ignore
+          arg [a.out] ==> ignore
+        collapse library dir [/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs] ==> [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib] ==> [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+        implicit objs: []
+        implicit dirs: [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs;/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCUDACompiler.cmake:579 (message)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Parsed CUDA nvcc include information:
+        found 'PATH=' string: [/apps/rocky9/cuda/12.6/bin/../nvvm/bin:/apps/rocky9/cuda/12.6/bin:/apps/rocky9/cuda/12.6/bin:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/hpss/bin:/opt/hsi/bin:/opt/puppetlabs/bin:/usr/site/rcac/sbin:/usr/site/rcac/bin:/usr/site/rcac/scripts:/opt/thinlinc/bin:/opt/thinlinc/sbin]
+        found 'LIBRARIES=' string: ["-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib"]
+        considering line: [#$ rm tmp/a_dlink.reg.c]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=6 -D__CUDACC_VER_BUILD__=20 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=6 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [cudafe++ --c++17 --gnu_version=110401 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/3.26.5/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=6 -D__CUDACC_VER_BUILD__=20 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=6 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: ["$CICC_PATH/cicc" --c++17 --gnu_version=110401 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/3.26.5/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+        considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+        considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -Wno-psabi "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+        considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"]
+          ignoring nvlink line
+        considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -c -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  -Wno-psabi "-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=12 -D__CUDACC_VER_MINOR__=6 -D__CUDACC_VER_BUILD__=20 -D__CUDA_API_VER_MAJOR__=12 -D__CUDA_API_VER_MINOR__=6 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/apps/rocky9/cuda/12.6/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+        considering line: [g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          extracted link line: [g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+        considering line: []
+        extracted link launcher name: [g++]
+        found link launcher absolute path: [/usr/bin/g++]
+        found 'INCLUDES=' string: ["-I/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include"  ]
+      
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        link line: [cuda-fake-ld g++ -D__CUDA_ARCH_LIST__=520 -D__NV_LEGACY_LAUNCH -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs" "-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          arg [cuda-fake-ld] ==> ignore
+          arg [g++] ==> ignore
+          arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+          arg [-D__NV_LEGACY_LAUNCH] ==> ignore
+          arg [-m64] ==> ignore
+          arg [-Wl,--start-group] ==> ignore
+          arg [tmp/a_dlink.o] ==> ignore
+          arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+          arg [-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs]
+          arg [-L/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib] ==> dir [/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib]
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [-Wl,--end-group] ==> ignore
+          arg [-o] ==> ignore
+          arg [a.out] ==> ignore
+        collapse library dir [/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib/stubs] ==> [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/lib] ==> [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+        implicit objs: []
+        implicit dirs: [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs;/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-aEJxt4"
+      binary: "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-aEJxt4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-aEJxt4
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d8960/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d8960.dir/build.make CMakeFiles/cmTC_d8960.dir/build
+        gmake[1]: Entering directory '/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-aEJxt4'
+        Building CXX object CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/g++   -v -o CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_d8960.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d8960.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64-v2 -version -o /tmp/ccXs1GKu.s
+        GNU C++17 (GCC) version 11.4.1 20231218 (Red Hat 11.4.1-3) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.4.1 20231218 (Red Hat 11.4.1-3), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward
+         /usr/lib/gcc/x86_64-redhat-linux/11/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 11.4.1 20231218 (Red Hat 11.4.1-3) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.4.1 20231218 (Red Hat 11.4.1-3), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 9405b6ffeb72113ec6541eb381112dcb
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_d8960.dir/'
+         as -v --64 -o CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXs1GKu.s
+        GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-43.el9
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_d8960
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8960.dir/link.txt --verbose=1
+        /usr/bin/g++  -v CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d8960 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d8960' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_d8960.'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOnBnTC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d8960 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d8960' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_d8960.'
+        gmake[1]: Leaving directory '/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-aEJxt4'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include] ==> [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11] ==> [/usr/include/c++/11]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux] ==> [/usr/include/c++/11/x86_64-redhat-linux]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include;/usr/include/c++/11;/usr/include/c++/11/x86_64-redhat-linux;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-redhat-linux/11/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-aEJxt4]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d8960/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d8960.dir/build.make CMakeFiles/cmTC_d8960.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-aEJxt4']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/g++   -v -o CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_d8960.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d8960.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64-v2 -version -o /tmp/ccXs1GKu.s]
+        ignore line: [GNU C++17 (GCC) version 11.4.1 20231218 (Red Hat 11.4.1-3) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.4.1 20231218 (Red Hat 11.4.1-3)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 11.4.1 20231218 (Red Hat 11.4.1-3) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.4.1 20231218 (Red Hat 11.4.1-3)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 9405b6ffeb72113ec6541eb381112dcb]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_d8960.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccXs1GKu.s]
+        ignore line: [GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-43.el9]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_d8960]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8960.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/g++  -v CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d8960 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d8960' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_d8960.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOnBnTC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d8960 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccOnBnTC.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d8960] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib] ==> dir [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+          arg [CMakeFiles/cmTC_d8960.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib] ==> [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    checks:
+      - "Detecting CUDA compiler ABI info"
+    directories:
+      source: "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-WS13GE"
+      binary: "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-WS13GE"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_RUNTIME_LIBRARY: "Static"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CUDA_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-WS13GE
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e90f4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e90f4.dir/build.make CMakeFiles/cmTC_e90f4.dir/build
+        gmake[1]: Entering directory '/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-WS13GE'
+        Building CUDA object CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o
+        /apps/rocky9/cuda/12.6/bin/nvcc -forward-unknown-to-host-compiler   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /usr/share/cmake/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=20' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0017fa99_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -E -quiet -v -I /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=20 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/share/cmake/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_0017fa99_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_0017fa99_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include
+         /apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward
+         /usr/lib/gcc/x86_64-redhat-linux/11/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=20' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0017fa99_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_0017fa99_00000000-7_CMakeCUDACompilerABI.cpp1.'
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=20' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0017fa99_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -E -quiet -v -I /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=20 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/share/cmake/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_0017fa99_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_0017fa99_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include
+         /apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward
+         /usr/lib/gcc/x86_64-redhat-linux/11/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=20' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0017fa99_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_0017fa99_00000000-5_CMakeCUDACompilerABI.cpp4.'
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e90f4.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -I /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_0017fa99_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_e90f4.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64-v2 -Wno-psabi -version -o /tmp/ccrUT3uz.s
+        GNU C++17 (GCC) version 11.4.1 20231218 (Red Hat 11.4.1-3) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.4.1 20231218 (Red Hat 11.4.1-3), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include
+         /apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward
+         /usr/lib/gcc/x86_64-redhat-linux/11/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 11.4.1 20231218 (Red Hat 11.4.1-3) (x86_64-redhat-linux)
+        	compiled by GNU C version 11.4.1 20231218 (Red Hat 11.4.1-3), GMP version 6.2.0, MPFR version 4.1.0-p9, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 9405b6ffeb72113ec6541eb381112dcb
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e90f4.dir/'
+         as -v -I /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o /tmp/ccrUT3uz.s
+        GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-43.el9
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.'
+        Linking CUDA executable cmTC_e90f4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e90f4.dir/link.txt --verbose=1
+        /usr/bin/g++  -v CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o -o cmTC_e90f4  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs" -L"/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib"
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e90f4' '-L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs' '-L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_e90f4.'
+         /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQUk584.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e90f4 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs -L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e90f4' '-L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs' '-L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_e90f4.'
+        gmake[1]: Leaving directory '/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-WS13GE'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Parsed CUDA implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include]
+          add: [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include] ==> [/apps/rocky9/cuda/12.6/targets/x86_64-linux/include]
+        collapse include dir [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include] ==> [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11] ==> [/usr/include/c++/11]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux] ==> [/usr/include/c++/11/x86_64-redhat-linux]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/11/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/11/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/apps/rocky9/cuda/12.6/targets/x86_64-linux/include;/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include;/usr/include/c++/11;/usr/include/c++/11/x86_64-redhat-linux;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-redhat-linux/11/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Parsed CUDA implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-WS13GE]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e90f4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e90f4.dir/build.make CMakeFiles/cmTC_e90f4.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-WS13GE']
+        ignore line: [Building CUDA object CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o]
+        ignore line: [/apps/rocky9/cuda/12.6/bin/nvcc -forward-unknown-to-host-compiler   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /usr/share/cmake/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=20' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0017fa99_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -E -quiet -v -I /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=20 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/share/cmake/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_0017fa99_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_0017fa99_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include]
+        ignore line: [ /apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=20' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0017fa99_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_0017fa99_00000000-7_CMakeCUDACompilerABI.cpp1.']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=20' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0017fa99_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -E -quiet -v -I /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=6 -D __CUDACC_VER_BUILD__=20 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=6 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/share/cmake/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_0017fa99_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64-v2 -dumpdir /tmp/ -dumpbase tmpxft_0017fa99_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include]
+        ignore line: [ /apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=6' '-D' '__CUDACC_VER_BUILD__=20' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=6' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_0017fa99_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' '/tmp/tmpxft_0017fa99_00000000-5_CMakeCUDACompilerABI.cpp4.']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e90f4.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/cc1plus -quiet -v -I /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D __NV_LEGACY_LAUNCH -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_0017fa99_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_e90f4.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64-v2 -Wno-psabi -version -o /tmp/ccrUT3uz.s]
+        ignore line: [GNU C++17 (GCC) version 11.4.1 20231218 (Red Hat 11.4.1-3) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.4.1 20231218 (Red Hat 11.4.1-3)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include]
+        ignore line: [ /apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/include]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/11/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 11.4.1 20231218 (Red Hat 11.4.1-3) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 11.4.1 20231218 (Red Hat 11.4.1-3)  GMP version 6.2.0  MPFR version 4.1.0-p9  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 9405b6ffeb72113ec6541eb381112dcb]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e90f4.dir/']
+        ignore line: [ as -v -I /apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o /tmp/ccrUT3uz.s]
+        ignore line: [GNU assembler version 2.35.2 (x86_64-redhat-linux) using BFD version version 2.35.2-43.el9]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-D' '__NV_LEGACY_LAUNCH' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-Wno-psabi' '-I' '/apps/rocky9/cuda/12.6/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.']
+        ignore line: [Linking CUDA executable cmTC_e90f4]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e90f4.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/g++  -v CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o -o cmTC_e90f4  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs" -L"/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-host-pie --enable-host-bind-now --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.rockylinux.org/ --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-plugin --enable-initfini-array --without-isl --enable-multilib --with-linker-hash-style=gnu --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_64=x86-64-v2 --with-arch_32=x86-64 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 11.4.1 20231218 (Red Hat 11.4.1-3) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/11/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/11/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib/:/usr/lib/gcc/x86_64-redhat-linux/11/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e90f4' '-L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs' '-L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64-v2' '-dumpdir' 'cmTC_e90f4.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/11/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQUk584.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_e90f4 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o -L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs -L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib -L/usr/lib/gcc/x86_64-redhat-linux/11/../../.. CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtend.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/11/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/11/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccQUk584.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e90f4] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o]
+          arg [-L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs] ==> dir [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs]
+          arg [-L/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib] ==> dir [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib] ==> dir [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..]
+          arg [CMakeFiles/cmTC_e90f4.dir/CMakeCUDACompilerABI.cu.o] ==> ignore
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs] ==> [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib] ==> [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11] ==> [/usr/lib/gcc/x86_64-redhat-linux/11]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib] ==> [/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../..] ==> [/usr/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/11/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib/stubs;/apps/rocky9/cuda/12.6/targets/x86_64-linux/lib;/usr/lib/gcc/x86_64-redhat-linux/11;/usr/lib64;/lib64;/apps/spack/scholar-all-20241220/apps/openmpi/5.0.5-gcc-11.4.1-svmliy7/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake/Modules/FindCUDA.cmake:1049 (find_package)"
+      - "CMakeLists.txt:20 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-zcnPKK"
+      binary: "/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-zcnPKK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-zcnPKK
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_04df6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_04df6.dir/build.make CMakeFiles/cmTC_04df6.dir/build
+        gmake[1]: Entering directory '/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-zcnPKK'
+        Building CXX object CMakeFiles/cmTC_04df6.dir/src.cxx.o
+        /usr/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_04df6.dir/src.cxx.o -c /home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-zcnPKK/src.cxx
+        Linking CXX executable cmTC_04df6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04df6.dir/link.txt --verbose=1
+        /usr/bin/g++ CMakeFiles/cmTC_04df6.dir/src.cxx.o -o cmTC_04df6 
+        gmake[1]: Leaving directory '/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/CMakeScratch/TryCompile-zcnPKK'
+        
+      exitCode: 0
+...

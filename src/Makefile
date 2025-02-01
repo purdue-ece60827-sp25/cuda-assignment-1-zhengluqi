@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles /home/zheng782/cuda-assignment-1-zhengluqi//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(CMAKE_COMMAND) -E cmake_progress_start /home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles /home/zheng782/cuda-assignment-1-zhengluqi/src//CMakeFiles/progress.marks
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,81 +103,70 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named lab1
+# Convenience name for target.
+src/CMakeFiles/cudaLib.dir/rule:
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/cudaLib.dir/rule
+.PHONY : src/CMakeFiles/cudaLib.dir/rule
 
-# Build rule for target.
-lab1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab1
-.PHONY : lab1
-
-# fast build rule for target.
-lab1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
-.PHONY : lab1/fast
-
-#=============================================================================
-# Target rules for targets named cudaLib
-
-# Build rule for target.
-cudaLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cudaLib
+# Convenience name for target.
+cudaLib: src/CMakeFiles/cudaLib.dir/rule
 .PHONY : cudaLib
 
 # fast build rule for target.
 cudaLib/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/cudaLib.dir/build.make src/CMakeFiles/cudaLib.dir/build
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cudaLib.dir/build.make src/CMakeFiles/cudaLib.dir/build
 .PHONY : cudaLib/fast
 
-#=============================================================================
-# Target rules for targets named cpuLib
+# Convenience name for target.
+src/CMakeFiles/cpuLib.dir/rule:
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/cpuLib.dir/rule
+.PHONY : src/CMakeFiles/cpuLib.dir/rule
 
-# Build rule for target.
-cpuLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpuLib
+# Convenience name for target.
+cpuLib: src/CMakeFiles/cpuLib.dir/rule
 .PHONY : cpuLib
 
 # fast build rule for target.
 cpuLib/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/cpuLib.dir/build.make src/CMakeFiles/cpuLib.dir/build
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cpuLib.dir/build.make src/CMakeFiles/cpuLib.dir/build
 .PHONY : cpuLib/fast
 
-lab1.o: lab1.cu.o
-.PHONY : lab1.o
+cpuLib.o: cpuLib.cpp.o
+.PHONY : cpuLib.o
 
 # target to build an object file
-lab1.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/lab1.cu.o
-.PHONY : lab1.cu.o
+cpuLib.cpp.o:
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cpuLib.dir/build.make src/CMakeFiles/cpuLib.dir/cpuLib.cpp.o
+.PHONY : cpuLib.cpp.o
 
-lab1.i: lab1.cu.i
-.PHONY : lab1.i
+cpuLib.i: cpuLib.cpp.i
+.PHONY : cpuLib.i
 
 # target to preprocess a source file
-lab1.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/lab1.cu.i
-.PHONY : lab1.cu.i
+cpuLib.cpp.i:
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cpuLib.dir/build.make src/CMakeFiles/cpuLib.dir/cpuLib.cpp.i
+.PHONY : cpuLib.cpp.i
 
-lab1.s: lab1.cu.s
-.PHONY : lab1.s
+cpuLib.s: cpuLib.cpp.s
+.PHONY : cpuLib.s
 
 # target to generate assembly for a file
-lab1.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/lab1.cu.s
-.PHONY : lab1.cu.s
+cpuLib.cpp.s:
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cpuLib.dir/build.make src/CMakeFiles/cpuLib.dir/cpuLib.cpp.s
+.PHONY : cpuLib.cpp.s
 
 # Help Target
 help:
@@ -189,10 +178,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... cpuLib"
 	@echo "... cudaLib"
-	@echo "... lab1"
-	@echo "... lab1.o"
-	@echo "... lab1.i"
-	@echo "... lab1.s"
+	@echo "... cpuLib.o"
+	@echo "... cpuLib.i"
+	@echo "... cpuLib.s"
 .PHONY : help
 
 
@@ -204,6 +192,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zheng782/cuda-assignment-1-zhengluqi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

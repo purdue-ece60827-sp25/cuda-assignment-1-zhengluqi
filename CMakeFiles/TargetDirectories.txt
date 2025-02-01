@@ -1,0 +1,7 @@
+/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/lab1.dir
+/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/edit_cache.dir
+/home/zheng782/cuda-assignment-1-zhengluqi/CMakeFiles/rebuild_cache.dir
+/home/zheng782/cuda-assignment-1-zhengluqi/src/CMakeFiles/cudaLib.dir
+/home/zheng782/cuda-assignment-1-zhengluqi/src/CMakeFiles/cpuLib.dir
+/home/zheng782/cuda-assignment-1-zhengluqi/src/CMakeFiles/edit_cache.dir
+/home/zheng782/cuda-assignment-1-zhengluqi/src/CMakeFiles/rebuild_cache.dir
